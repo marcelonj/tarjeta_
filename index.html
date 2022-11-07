@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Roboto&family=Satisfy&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="recursos/anillo-de-bodas.png">
+    <title>Boda de Cristian y Eugenia</title>
+</head>
+<body>
+    <header class="header">
+        <nav>            
+            <a href="#inicio"><img src="recursos/anillo-de-bodas.png" alt="anillos"></a>
+            <a href="#fecha"><img src="recursos/calendario.png" alt="calendario"></a>
+            <a href="#ubicacion"><img src="recursos/mapa.png" alt="mapa"></a>
+            <a href="#regalo"><img src="recursos/caja-de-regalo.png" alt="regalo"></a>
+            <a href="#asistencia"><img src="recursos/check.png" alt="asist"></a>
+        </nav>
+    </header>
+        <audio src="recursos/audio.mp3"></audio>
+        <button id="boton">
+            <img src="recursos/musica.png" alt="">
+            <p id="eliminar">Activar / Desactivar música</p>
+        </button>
+    <div class="contenedor">
+        <div id="cont_fondo">
+            <img id="fondo" src="recursos/fondo flores 2.jpg" alt="">
+        </div>
+        
+        <div id="inicio">
+            <p id="boda">Faltan:</p>
+            <div id="contador"></div>
+            <img src="recursos/foto.jpg" alt="novios">
+            <p id="frase">"Amor es solo una palabra, hasta que alguien llega para darle sentido."</p>
+        </div>
+        <div id="fecha">
+            <img src="recursos/Calendario-Noviembre-2022-original-1024x724.webp" alt="calendario">
+            <h1>Ceremonia</h1>
+            <p>25 de noviembre 12 hs</p>
+            <h1>Fiesta</h1>
+            <p>26 de noviembre 21:30 hs
+            </p>
+        </div>
+        <div id="ubicacion">
+            <h1>Ceremonia</h1>
+            <p>Registro Civil (Almte. Brown 160)</p>
+            <h1>Fiesta</h1>
+            <p>Dr. Luis Güemes 1011
+            </p>
+            <iframe id="mapa_google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.5787915773644!2d-65.4332465!3d-24.775627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc233c28a5ccb%3A0xbb5023829f6c45ce!2sDr.%20Luis%20G%C3%BCemes%201011%2C%20Salta!5e0!3m2!1ses-419!2sar!4v1665615952804!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="regalo">
+            <h2>¡El regalo es opcional...la asistencia obligatoria!</h2>
+            <p>Pero si queres tener un detalle con nosotros, que mejor que ayudar a pagar la luna de miel...</p><br>
+                <p id="cbu">CBU: 2850110540095213303358</p>
+                <button id="btn_cbu" onclick="copiarAlPortapapeles()">Copiar CBU</button>
+        </div>
+        <div id="asistencia">
+            <div>
+                <h1>Código de vestimenta:</h1>
+                <p>Elegante sport</p>
+            </div>
+            <div id="asistencia_boton">   
+                <p>Ingrese su nombre y apellido para confirmar su asistencia</p>
+                <p id="limite">Fecha limite: 10/11/2022</p>
+                <input id="nombre" type="text" placeholder="Nombre y apellido">             
+                <button id="asistire" onclick="asistencia()">Confirmar asistencia a Eugenia</button>
+                <button id="asistire" onclick="asistencia_cristian()">Confirmar asistencia a Cristian</button>
+            </div>
+        </div>
+    </div>
+<div id="mensaje_copiado"><p>CBU copiado</p></div>
+<script src="simplyCountdown.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

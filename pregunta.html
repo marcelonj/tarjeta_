@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Roboto&family=Satisfy&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="recursos/me-gusta.png">
+    <title>Querés ser mi novia?</title>
+</head>
+<body>
+        <audio src="recursos/Bad Bunny Ojitos Lindos.mp3"></audio>
+        <button id="boton">
+            <img src="recursos/musica.png" alt="">
+            <p id="eliminar">Activar / Desactivar música</p>
+        </button>
+    <div class="contenedor">
+        <div id="cont_fondo">
+            <img id="fondo" src="recursos/fondo flores 2.jpg" alt="">
+        </div>
+        
+        <div id="inicio">
+            <p style="z-index: -10;" id="boda">Llevamos:</p>
+            <div id="contador"></div>
+            <img src="recursos/foto.jpg" alt="novios">
+            <p id="frase">"Amor es solo una palabra, hasta que alguien llega para darle sentido."</p>
+            <p id="pregunta">Amor, ¿Querés ser mi novia?</p>
+            <div id="respuesta">
+                <button onclick="contador()" id="si">Si</button>
+                <button id="no">No</button>
+            </div>
+            
+        </div>
+        
+        <div id="asistencia">
+            <div>
+                <h1>Código de vestimenta:</h1>
+                <p>Elegante sport</p>
+            </div>
+            <div id="asistencia_boton">   
+                <p>Ingrese su nombre y apellido para confirmar su asistencia</p>
+                <p id="limite">Fecha limite: 10/11/2022</p>
+                <input id="nombre" type="text" placeholder="Nombre y apellido">             
+                <button id="asistire" onclick="contador()">Confirmar asistencia a Eugenia</button>
+                <button id="asistire" onclick="asistencia_cristian()">Confirmar asistencia a Cristian</button>
+            </div>
+        </div>
+    </div>
+<script src="simplyCountdown.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* background-color: rgb(255, 219, 185); */
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 20%;
+    right: 20%;
+}
+
+nav a{
+    margin-left: .2rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 6vh;
+    width: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(250, 222, 161, 0.521);
+}
+
+nav a img{
+    height: 80%;
+    width: 80%;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgba(255, 247, 240, 0);
+}
+
+#cont_fondo{
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+#fondo{
+    height: 100%;
+    width: 100%;
+}
+
+#inicio, #fecha, #ubicacion, #regalo, #asistencia{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    padding-top: 10vh;
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px dashed black;
+}
+
+#mapa_google{
+    max-height: 80vh;
+    max-width: 80vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0;
+    margin-top: 2vh;
+
+}
+
+div h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+div p{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+#frase{
+    font-family: 'Passions Conflict', cursive;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    font-size: 2.5rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+#inicio{
+    align-items: center;
+}
+
+div a{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#inicio img{
+    border-radius: 50%;
+    border: 2px solid black;
+    height: 15rem;
+    width: 15rem;
+}
+
+#boda{
+    margin-top: 2rem;
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+}
+
+#pregunta{
+    margin-top: 2rem;
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem;
+}
+
+#si{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding: .3rem;
+    background-color: rgba(0, 128, 0, 0.712);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    width: 4rem;
+}
+
+#no{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding: .3rem;
+    background-color: rgba(192, 9, 9, 0.712);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    width: 4rem;
+}
+
+#fecha img{
+    width: 40vh;
+    margin: 2vh 0;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#contador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1vh 2vh 1vh;
+}
+
+.simply-section{
+    background-color: rgba(255, 255, 255, 0.637);
+    height: 10vh;
+    width: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 .5vh;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.simply-amount{
+    display: block;
+    width: 10vh;
+}
+
+#asistencia_boton a{
+    text-decoration: none;
+    color: black;
+}
+
+#asistencia_boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 80%;
+    background-color: rgba(182, 255, 160, 0.473);
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 0;
+}
+
+#asistencia_boton p{
+    /* font-size: 1.3rem; */
+    margin-bottom: 1rem;
+}
+
+#asistencia_boton input{
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 1.5rem;
+    width: 90%;
+}
+
+#asistencia_boton button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding: .3rem;
+    background-color: rgba(0, 128, 0, 0.418);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+}
+
+#asistencia h1{
+    font-size: 2rem;
+    border: 0;
+    margin: 0;
+}
+
+#asistencia p{
+    margin: 0;
+}
+
+#asistencia div{
+    border: 1px solid black;
+    padding: 2vh 0;
+    border-radius: 10px;
+    margin: 0 2vh 2vh 2vh;
+}
+
+/* #boton{
+    bottom: 1vh;
+    left: 1vh;
+    position: fixed;
+    width: 4vh;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid black;
+    border-radius: 50%;
+} */
+
+#boton{
+    bottom: 1vh;
+    left: 1vh;
+    position: fixed;
+    width: auto;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0 1vh;
+    transition: all .7s;
+    background-color: rgba(192, 9, 9, 0.548);
+    /* background-color: rgba(14, 134, 14, 0.493); */
+}
+
+button img{
+    height: 2vh;
+    width: 2vh;
+}
+
+button p{
+    margin-left: 1vh;
+}
+
+h2{
+    font-family: 'Satisfy', cursive;
+    margin: 0 1vh 1vh 1vh;
+}
+
+#mensaje_copiado{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.493);
+    justify-content: center;
+    align-items: center;
+}
+
+#mensaje_copiado{
+    font-size: 3rem;
+    color: aliceblue;
+    font-weight: 800;
+    z-index: -2;
+}
+
+#btn_cbu{
+    height: 2rem;
+    background-color: rgba(222, 184, 135, 0.63);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0 1rem;
+    font-weight: bold;
+}
+#limite {
+    font-size: 1rem;
+    color: brown;
+    font-weight: 600;
+}
