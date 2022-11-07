@@ -326,3 +326,23 @@ h2{
     color: brown;
     font-weight: 600;
 }
+
+#marcelo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    padding-top: 1vh;
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px dashed black;
+}
+
+#marcelo img{
+    border-radius: 50%;
+    border: 2px solid black;
+    height: 15rem;
+    width: 15rem;
+}
