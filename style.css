@@ -63,13 +63,13 @@ nav a img{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 10vh;
     font-size: 1.5rem;
     text-align: center;
     align-items: center;
     justify-content: center;
-
+    border-bottom: 1px dashed black;
 }
 
 #mapa_google{
@@ -104,7 +104,7 @@ div p{
     padding-right: 2rem;
     padding-top: 1rem;
     font-size: 2.5rem;
-    text-align: center;
+    text-align: justify;
     line-height: 2rem;
 }
 
@@ -128,35 +128,6 @@ div a{
     margin-top: 2rem;
     font-family: 'Satisfy', cursive;
     font-size: 3rem;
-    transition: all 1s;
-}
-
-#pregunta{
-    margin-top: 2rem;
-    font-family: 'Satisfy', cursive;
-    font-size: 2rem;
-}
-
-#si{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    padding: .3rem;
-    background-color: rgba(0, 128, 0, 0.712);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    width: 4rem;
-}
-
-#no{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    padding: .3rem;
-    background-color: rgba(192, 9, 9, 0.712);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    width: 4rem;
 }
 
 #fecha img{
@@ -327,12 +298,47 @@ h2{
     font-weight: 600;
 }
 
+#boda{
+    margin-top: 2rem;
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    transition: all 1s;
+}
+
+#pregunta{
+    margin-top: 2rem;
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem;
+}
+
+#si{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding: .3rem;
+    background-color: rgba(0, 128, 0, 0.712);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    width: 4rem;
+}
+
+#no{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding: .3rem;
+    background-color: rgba(192, 9, 9, 0.712);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 6rem;
+    width: 4rem;
+}
+
+
 #marcelo{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 85vh;
-    width: 100%;
     padding-top: 1vh;
     font-size: 1.5rem;
     text-align: center;
