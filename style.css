@@ -332,6 +332,7 @@ h2{
     flex-direction: column;
     flex-wrap: wrap;
     height: 85vh;
+    width: 100%;
     padding-top: 1vh;
     font-size: 1.5rem;
     text-align: center;
