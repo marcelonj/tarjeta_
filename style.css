@@ -128,6 +128,7 @@ div a{
     margin-top: 2rem;
     font-family: 'Satisfy', cursive;
     font-size: 3rem;
+    transition: all 1s;
 }
 
 #pregunta{
