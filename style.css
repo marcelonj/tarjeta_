@@ -144,7 +144,7 @@ div a{
     background-color: rgba(0, 128, 0, 0.712);
     border: 1px solid black;
     border-radius: 5px;
-    margin-bottom: 6rem;
+    margin-bottom: 1rem;
     width: 4rem;
 }
 
@@ -155,7 +155,7 @@ div a{
     background-color: rgba(192, 9, 9, 0.712);
     border: 1px solid black;
     border-radius: 5px;
-    margin-bottom: 6rem;
+    margin-bottom: 1rem;
     width: 4rem;
 }
 
@@ -325,4 +325,24 @@ h2{
     font-size: 1rem;
     color: brown;
     font-weight: 600;
+}
+
+#marcelo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 85vh;
+    padding-top: 1vh;
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#marcelo img{
+    border-radius: 50%;
+    border: 2px solid black;
+    height: 15rem;
+    width: 15rem;
 }
