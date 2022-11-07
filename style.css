@@ -345,3 +345,7 @@ h2{
     height: 15rem;
     width: 15rem;
 }
+
+#marcelo p{
+    margin-bottom: 0;
+}
